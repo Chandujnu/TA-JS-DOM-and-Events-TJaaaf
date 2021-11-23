@@ -1,24 +1,46 @@
-let body = document.querySelector("body")
-let div = document.createElement("div");
-body.append(div);
 
-function createBox() {
-    let box = document.createElement("div");
-    let h3 = document.createElement("h3");
-    box.style.height = "4rem";
-    box.style.width = "4rem";
-    box.style.border = "0.15rem solid black";
-    box.style.background = '#' + Math.floor(Math.random() * 899) + 100;
-    h3.innerText = Math.floor(Math.random() * 500);
-    div.append(box);
-    box.append(h3);
+
+// function generateRandomColor() {
+// let randomColor = '#' + Math.floor(Math.random() *999) + 100;
+// return generateRandomColor;
+// }
+
+// function generateRandomNumber(){
+//     let randomNumber = Math.floor(Math.random() * 500);
+// }
+let parentBox = document.querySelector(".boxes");
+
+for(let i = 0; i < 500; i++) {
+    let div = document.createElement("div");
+    div.classList.add("box");
+    div.style.backgroundColor ='#' + Math.floor(Math.random() *999) + 100;
+    let h2 = document.createElement("h3");
+    h2.innerText = Math.floor(Math.random() * 500);
+    div.append(h2);
+    parentBox.append(div);
 }
 
-function createDisco() {
-    for (i = 0; i < 500; i++) {
-        createBox();
-    }
+let allBoxes = document.querySelectorAll("box");
+function handleMouseMove(){
+    allBoxes.forEach((box) => {
+        box.style.backgroundColor = '#' + Math.floor(Math.random() *999) + 100;
+        box.querySelector("h3").innerText = Math.floor(Math.random() * 500);
+    });
+}
+parentBox.addEventListener("mousemove", handleMouseMove);
+// let allBoxes = querySelectorAll("box")
+// function createBox() {
+   
+//     allBoxes.forEach((elm) => {
+//         elm.style.background = randomColor});
     
-}
-createDisco();
-div.addEventListener("mousemove", createBox)
+// }
+
+// function createDisco() {
+//     for (i = 0; i < 500; i++) {
+//         createBox();
+//     }
+    
+// }
+// createDisco();
+// div.addEventListener("mousemove", createBox)
