@@ -13,7 +13,7 @@ let parentBox = document.querySelector(".boxes");
 for(let i = 0; i < 500; i++) {
     let div = document.createElement("div");
     div.classList.add("box");
-    div.style.backgroundColor ='#' + Math.floor(Math.random() *999) + 100;
+    div.style.backgroundColor ='#' + Math.floor(Math.random() * 999) + 100;
     let h2 = document.createElement("h3");
     h2.innerText = Math.floor(Math.random() * 500);
     div.append(h2);
