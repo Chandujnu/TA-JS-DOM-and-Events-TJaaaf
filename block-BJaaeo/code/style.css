@@ -65,6 +65,13 @@ h1 {
     height: 6rem;
     width: 50%;
     border-radius: 1.2rem;
+    color: white;
+    font-size: 3rem;
+    font-weight: 800;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 1rem;
 }
 
 .operation {
@@ -81,6 +88,7 @@ section {
     /* flex-wrap: wrap; */
     justify-content: space-between;
     width: 50%;
+    padding-bottom: 2rem;
 }
 button {
     border: none;
@@ -91,17 +99,16 @@ button {
     font-weight: 900;
     color: white;
 }
-.number {
-   
-}
 .num-btn {
     text-align: center;
     background-color: rgb(207,207,207);
     padding: 1.5rem 4rem;
-    margin: 0.5rem 0;
+    margin: 0.5rem 0.8rem 0.5rem 0;
+    color: #000;
 }
 .equal {
     height: 100%;
     background-color: rgb(34,129,128);
-    
+    margin: 0.5rem 0;
+
 }
