@@ -29,7 +29,7 @@
         </div>
         <div class="form-control">
           <label for="movies">What do you love?</label>
-          <select id="gender" name="gender">
+          <select id="gender" name="choice">
             <option value="movies">Movies</option>
             <option value="series">Series</option>
             <option value="others">Others</option>
@@ -52,7 +52,7 @@
             type="range"
             max="10"
             step="1"
-            name="email"
+            name="movie"
             placeholder="Enter your email"
           />
         </div>
@@ -91,6 +91,10 @@
         </div>
         <button type="submit">Submit</button>
       </form>
+      <div class="model_overlay">
+        <button class="model_close">Close</button>
+        <div class="model_data"></div>
+      </div>
     </div>
     <script src="./script.js"></script>
   </body>
