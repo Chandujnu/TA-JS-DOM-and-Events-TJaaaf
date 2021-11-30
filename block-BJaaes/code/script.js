@@ -7,7 +7,7 @@ function displayError(userinfo){
     userinfo.classList.remove("success")
     userinfo.classList.add("error")
 }
-function displaySeccess(userinfo){
+function displaySuccess(userinfo){
    userinfo.classList.remove("error")
    userinfo.classList.add("success")
 }
@@ -17,14 +17,14 @@ function validateUserName(str) {
         return `Username can't be less than 4 characters`
     }
     else {
-       displaySeccess(form.elements["username"]);
+       displaySuccess(form.elements["username"]);
     return ""}
 }
 function validateName(str) {
     if(str.includes(Number)) {
         return`You can't use number in name field`;
     } else {
-        displaySeccess(form.elements["name"]);
+        displaySuccess(form.elements["name"]);
     }
 }
 function validateEmail(str) {
@@ -35,7 +35,7 @@ function validateEmail(str) {
         return `Enter atleast 6 caracter`
     }
     else {
-        displaySeccess(form.elements["email"])
+        displaySuccess(form.elements["email"])
     return ""}
 }
 function validatePhone(num) {
@@ -47,7 +47,7 @@ function validatePhone(num) {
         return `Length of phone number can't be less than 7`
     } 
     else {
-        displaySeccess(form.elements["phone"])
+        displaySuccess(form.elements["phone"])
     return ""}
 }
 
@@ -59,8 +59,8 @@ function validatePassword(pass,cPass){
         return `Password and confirm password must be same.`
     }else{
         allSmall[4].innerText = ""
-        displaySeccess(form.elements["pass"])
-        displaySeccess(form.elements["cPass"])
+        displaySuccess(form.elements["pass"])
+        displaySuccess(form.elements["cPass"])
     }
 }
 function handleSubmit(event) {
