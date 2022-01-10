@@ -26,6 +26,7 @@ input.addEventListener("keyup", (event) => {
 function deleteMovie(event) {
    let id = event.target.dataset.id;
    allMovies.splice(id, 1);
+   createMovieUI();
 }
 
 function handleChange(event) {
@@ -57,3 +58,4 @@ function createMovieUI() {
     });
 }
 createMovieUI();
+
