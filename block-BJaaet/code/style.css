@@ -47,9 +47,55 @@ table {
     border-spacing: 0;
 }
 
-.heading {
-    margin-top: 3rem;
-    text-align: center;
-    font-size: 2rem;
-    font-weight: 700;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
+
+body {
+    font-family: "Raleway", sans-serif;
+    line-height: 1.5;
+    background-image: linear-gradient(
+      to right,
+      rgb(153, 52, 69),
+      rgba(169, 169, 46, 0.856)
+    );
+    height: 100vh;}
+
+input[type='text'] {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border: none;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: 800;
+  }
+.container {
+    margin: 5rem auto;
+    max-width: 400px;
+    width: 100%;
+    background-color: blue;
+    border-radius: 0.3rem;
+}
+.enter {
+    width: 100%;
+    padding: 0.5rem;
+  }
+  .styled-checkbox {
+    padding: 1rem;
+    font-size: 1.3rem;
+  }
+  li {
+    padding: 1rem;
+    border: 0.5px dashed cornsilk;
+  }
+  span {
+    margin-left: 2rem;
+    border: none;
+  }
+  
