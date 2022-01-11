@@ -68,7 +68,7 @@ h2 {
 header {
   display: flex;
   align-items: center;
-  background-image: linear-gradient(to right, red, yellow);
+  background-image: linear-gradient(to right, rgb(255, 0, 204), rgb(0, 195, 255));
 }
 .header {
   margin: 0 auto;
@@ -88,17 +88,15 @@ main {
   padding: 1rem 3rem;
 }
 article {
-  width: 430px;
-  background-color: rgb(255, 165, 0);
+  width: 30%;
+  background-color: rgb(0, 255, 251);
   margin-top: 2rem;
   padding: 1rem;
   border-radius: 10px;
   box-shadow: 1px 1px 10px rgb(0, 0, 0, 0.1);
+  text-align: center;
 }
-article div {
-  display: flex;
-  align-items: center;
-}
+
 article img {
   border-radius: 50%;
   border: 2px solid green;
@@ -117,7 +115,7 @@ p {
   font-weight: 500;
 }
 button {
-  width: 100%;
+  width: 40%;
   background-color: black;
   border: none;
   padding: 0.8rem;
